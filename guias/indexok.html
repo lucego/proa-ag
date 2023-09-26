@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museos de Alta Gracia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            background: url("colage museo.jpg");
+            text-align: center; /* Centra el contenido horizontalmente */
+            font-family: Arial, sans-serif;
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+        }
+
+        header {
+            background-color: rgba(252, 214, 4, 0.8); /* Fondo semitransparente para el encabezado */
+            padding: 20px;
+        }
+
+        nav {
+            background-color: rgba(252, 214, 4, 1); /* Fondo semitransparente para la barra de navegación */
+            padding: 10px;
+        }
+
+        footer {
+            background-color: rgba(252, 214, 4, 0.8); /* Fondo amarillo semitransparente */
+            padding: 20px;
+            text-align: center; /* Centra el contenido horizontalmente */
+            color: white; /* Texto en blanco */
+            position: absolute; /* Posición absoluta en la parte inferior */
+            width: 100%; /* Ancho al 100% del viewport */
+            bottom: 0; /* Coloca el pie de página en la parte inferior */
+        }
+
+        /* Estilos para el botón */
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        /* Estilos para el video */
+        #videoPlayer {
+            display: none;
+            margin: 0 auto;
+            margin-top: 20px; /* Centra el video horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a los Museos de Alta Gracia</h1>
+        <p>Descubre lugares emocionantes para tus próximas aventuras.</p>
+    </header>
+    <nav>
+        <a href="#ini">Inicio Sesión</a>
+        <a href="#act">Visitas</a>
+        <a href="#cont">Contacto</a>
+    </nav>
+
+    <div class="container-blue">
+        <section id="ini">
+            <!-- Botón para ver el video -->
+            <button class="btn success" onclick="playVideo()">Ver Video</button>
+        </section>
+    </div>
+
+    <!-- Reproductor de video oculto -->
+    <video id="videoPlayer" controls>
+        <source src="ag_museo.mp4" type="video/mp4">
+        <!-- link a video ag_museo.mp4 https://bit.ly/3PuHCOt -->
+        <!-- link a video nuestra historia https://bit.ly/3taWBFV -->
+        Tu navegador no admite el elemento de video.
+    </video>
+
+    <footer>
+        <h1>Los esperamos</h1>
+    </footer>
+
+    <script>
+        // Función para reproducir el video cuando se hace clic en el botón
+        function playVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.style.display = 'block';
+            videoPlayer.play();
+        }
+    </script>
+</body>
+</html>
