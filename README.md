@@ -1,5 +1,7 @@
 # proa-ag
+
 Escuela Experimental Proa Alta Gracia - Còrdoba - Argentina
+
 PÁGINAS MUSEOS ALTA GRACIA 
 índice:  
     • resumen; pág.									    	              2
