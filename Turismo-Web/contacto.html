@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+
+<body>
+    
+    <img src="C:\Users\facur\Desktop\Turismo Webn\img\museo-estancia-jesuitica.jpg" width="40%", height="40%">  
+    <main>
+
+        <form>
+            
+            <label for="Seleccionar" class="form-label">Seleccionar motivo de consulta</label>
+                <select name="Seleccionar" class="form-check" id="Seleccionar">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Preguntar">Preguntar algo</option>
+                    <option value="Bug">Error o Bug</option>
+                    <option value="AgrInfo">Agregar Info</option>
+                    <option value="ErrInfo">Error en la Info</option>
+                </select>
+
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Ingrese su nombre</label>
+                <input type="text" class="form-control" name="Nombre" id="Nombre" minlength="3" maxlength="30">
+            </div>
+
+            <div class="mb-3">
+                <label for="Apellido" class="form-label">Ingrese su Apellido</label>
+                <input type="text" class="form-control" name="Apellido" id="Apellido" minlength="3" maxlength="30">
+            </div>
+
+            <div class="mb-3">
+                <label for="Mail" class="form-label">Ingrese su E-Mail</label>
+                <input type="email" class="form-control" name="Mail" id="Mail">
+            </div>
+
+            <div class="mb-3">
+                <label for="NroTel" class="form-label">Ingrese su numero de telefono</label>
+                <input type="number" class="form-control" name="NroTel" id="Telefono">
+            </div>
+
+            <div class="mb-3">
+                <label for="Consult" class="form-label">Cuentenos su consulta</label>
+                <input type="text" class="form-control" name="Consulta" id="Consulta">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Terminos y Condiciones">
+                <label class="form-check-label" for="TM">Acepton't Terminos y Condiciones</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Restablecer</button>
+
+        </form>
+        
+    </main>  
+    
+</body>
+</html>
