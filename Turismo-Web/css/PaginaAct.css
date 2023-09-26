@@ -1,0 +1,138 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f0f0f0 0%, #d1e8ff 100%);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: linear-gradient(180deg, #fff 0%, #d1e8ff 100%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+    background: linear-gradient(180deg, #9075cf 0%, #21608a 100%);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUpHeader 0.5s ease forwards;
+}
+
+.header__logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.header__logo a:hover {
+    opacity: 0.8;
+}
+
+.header__nav .header__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.header__nav .header__menu li {
+    display: inline;
+}
+
+.header__nav .header__menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #ddd 0%, #bbb 100%);
+    transition: background 0.3s;
+}
+
+.header__nav .header__menu a:hover {
+    background: linear-gradient(180deg, #ccc 0%, #aaa 100%);
+}
+
+
+.container section {
+    background: linear-gradient(180deg, #fff 0%, #d1e8ff 100%);
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpSection 0.5s ease forwards;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes fadeInUpHeader {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpSection {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navimgheader {
+    color: aliceblue;
+}
+
+
+.main__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: linear-gradient(180deg, #2196f3 0%, #176bb5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+}
+
+.btn-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #176bb5 0%, #0d4f91 100%);
+}
+
+.btn:hover .btn-arrow {
+    opacity: 1;
+    transform: translateY(-50%) translateX(5px);
+}
