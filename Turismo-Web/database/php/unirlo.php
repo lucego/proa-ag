@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$dbUsername = "pepito";
+$dbUsername = "pepito123";
 $dbPassword = "";
 $dbName = "BDActividades"; // Nombre de base de datos
 
